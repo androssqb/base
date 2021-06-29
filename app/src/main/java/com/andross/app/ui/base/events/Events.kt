@@ -2,8 +2,7 @@ package com.andross.app.ui.base.events
 
 import androidx.annotation.StringRes
 import androidx.navigation.NavDirections
-
-interface Event
+import com.andross.utitlities.lifecycle.Event
 
 sealed class NavigationEvent : Event
 
