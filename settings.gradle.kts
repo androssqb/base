@@ -24,10 +24,8 @@ pluginManagement {
 rootProject.name = "base"
 include(
     ":app",
-    ":presentation",
     ":domain",
     ":data",
     ":base-test",
-    ":ui-kit",
     ":utilities"
 )

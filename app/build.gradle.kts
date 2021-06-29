@@ -104,11 +104,25 @@ dependencies {
 
     implementation(project(":data"))
     implementation(project(":domain"))
-    implementation(project(":presentation"))
-    implementation(project(":ui-kit"))
+    implementation(project(":utilities"))
+
+    implementation(PresentationDependency.CORE)
+    implementation(PresentationDependency.CORE_ANIMATION)
+    implementation(PresentationDependency.APPCOMPAT)
+    implementation(PresentationDependency.CONSTRAINT_LAYOUT)
+    implementation(PresentationDependency.MATERIAL_UI)
+    implementation(PresentationDependency.RMR_VIEW_BINDING)
+    implementation(PresentationDependency.LIFECYCLE_VIEWMODEL)
+    implementation(PresentationDependency.LIFECYCLE_RUNTIME)
+
+    implementation(PresentationDependency.ACTIVITY_KTX)
+    implementation(PresentationDependency.FRAGMENT_KTX)
+
+    implementation(PresentationDependency.NAVIGATION_FRAGMENT_KTX)
+    implementation(PresentationDependency.NAVIGATION_UI_KTX)
+    implementation(PresentationDependency.NAVIGATION_DYNAMIC_FEATURES)
 
     kapt(CoreDependency.DAGGER_COMPILER)
-    kapt(CoreDependency.DAGGER_ANDROID_PROCESSOR)
 
     testImplementation(TestDependency.JUNIT)
     testImplementation(TestDependency.ANDROIDX)
